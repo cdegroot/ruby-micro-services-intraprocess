@@ -1,0 +1,4 @@
+interface MailServce {
+  // send an email to someone
+  send_email(from_email string, to_email string, subject string, body string) bool
+}
