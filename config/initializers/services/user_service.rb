@@ -1,11 +1,16 @@
-class UserService
+class Services
 
-  def self.client
-    @@instance ||= create
-    @@instance.UserService
+  def self.user_service
+    @@services ||= proxy_services
+    @@services[:user_service]
   end
 
-  def self.create
-    Barrister::Rails::Client.new Services::UserService.new, './services/user_service/user_service.json'
+  def self.proxy_services
+    service = UserService.new
+    path    = './services/user_service/user_service.json'
+    client  = Barrister::Rails::Client.new(service, path)
+
+    { user_service: client.UserService }
   end
+
 end
