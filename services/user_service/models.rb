@@ -1,5 +1,11 @@
-class User < ActiveRecord::Base
-  validates_presence_of :full_name, :phone_number, :email
+module UserService
 
-  validates :email, uniqueness: true
+  class User < ActiveRecord::Base
+
+    validates_presence_of :full_name, :phone_number, :email
+
+    validates :email, uniqueness: true
+
+  end
+
 end

@@ -1,13 +1,13 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: basicsoa_http_development
+  database: basicsoa_ip_development
   pool: 5
   username: postgres
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: basicsoa_http_development
+  database: basicsoa_ip_development
   pool: 5
   username: postgres

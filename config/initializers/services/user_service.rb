@@ -1,4 +1,4 @@
-class UserService
+class UserServiceClient
 
   def self.instance
     @@instance ||= create
@@ -6,7 +6,6 @@ class UserService
   end
 
   def self.create
-    config = YAML::load_file(File.join(Rails.root, 'config', 'services.yml'))['user_service']
-    Barrister::Rails::Client.new config['uri']
+    Barrister::Rails::Client.new UserService::UserService.new, './services/user_service/user_service.json'
   end
 end
