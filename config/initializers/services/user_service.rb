@@ -1,6 +1,6 @@
-class UserServiceClient
+class UserService
 
-  def self.instance
+  def self.client
     @@instance ||= create
     @@instance.UserService
   end
