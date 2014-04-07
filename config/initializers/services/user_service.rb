@@ -6,6 +6,6 @@ class UserServiceClient
   end
 
   def self.create
-    Barrister::Rails::Client.new UserService::UserService.new, './services/user_service/user_service.json'
+    Barrister::Rails::Client.new Services::UserService.new, './services/user_service/user_service.json'
   end
 end

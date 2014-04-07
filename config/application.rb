@@ -12,6 +12,6 @@ module Basicsoa
   class Application < Rails::Application
     config.assets.initialize_on_precompile = false
     config.assets.enabled = false
-    config.autoload_paths += %W(#{config.root}/services)
+    config.autoload_paths += %W(#{config.root}/services/user_service)
   end
 end

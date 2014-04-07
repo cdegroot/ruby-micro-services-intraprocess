@@ -1,4 +1,4 @@
-module UserService
+module Services
 
   class User < ActiveRecord::Base
 
