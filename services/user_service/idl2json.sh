@@ -1,1 +1,1 @@
-curl --data-urlencode idl@user_service.idl http://barrister.bitmechanic.com/run > user_service.json
+curl --data-urlencode idl@interface.idl http://barrister.bitmechanic.com/run > interface.json

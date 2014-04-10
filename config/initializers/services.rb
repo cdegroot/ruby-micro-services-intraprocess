@@ -7,7 +7,7 @@ class Services
 
   def self.proxy_services
     service = UserService.new
-    path    = './services/user_service/user_service.json'
+    path    = './services/user_service/interface.json'
     client  = Barrister::Rails::Client.new(service, path)
 
     { user_service: client.UserService }
