@@ -1,13 +1,11 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: basicsoa_ip_development
-  pool: 5
-  username: postgres
+  adapter: mysql
+  database: zorob_development
+  username: zorob
+  password: zorob
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: basicsoa_ip_development
-  pool: 5
-  username: postgres
+  adapter: mysql
+  database: zorob_development
+  username: zorob
+  password: zorob
